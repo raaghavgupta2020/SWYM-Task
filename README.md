@@ -35,4 +35,8 @@ Design and implement a system that captures questions from participants for a li
 5. Participants can use the unique event URL to submit their questions for the event.
 6. If a TTL was set for the event, the URL will expire after the specified time, and no new questions can be submitted, otherwise the event will never expire.
 
+### Architecture Diagram
+![SWYM task architecture](https://github.com/raaghavgupta2020/SWYM-Task/assets/72166013/17525f39-198c-456e-80ca-4d610636e2e0)
+
+
 Feel free to contribute to the project and improve its features!
