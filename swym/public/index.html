@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Event System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Host Login Form -->
+        <section id="host-login">
+            <h2>Host Login</h2>
+            <form id="login-form">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+
+        <!-- Event Creation Form -->
+        <section id="event-creation" style="display:none;">
+            <h2>Create Event</h2>
+            <form id="event-form">
+                <input type="text" id="event-name" placeholder="Event Name" required>
+                <textarea id="event-description" placeholder="Event Description" required></textarea>
+                <input type="date" id="event-date" required>
+                <input type="time" id="event-time" required>
+                <input type="datetime-local" id="event-ttl" placeholder="TTL (optional)">
+                <button type="submit">Create Event</button>
+            </form>
+        </section>
+
+        <!-- QnA Submission Form -->
+        <section id="submit-qna">
+            <h2>Submit Questions</h2>
+            <form id="qna-form">
+                <input type="text" id="event-url" placeholder="Event URL" required>
+                <textarea id="question-content" placeholder="Your Question" required></textarea>
+                <button type="submit">Submit Question</button>
+            </form>
+        </section>
+
+        <!-- Questions and Replies -->
+        <div class="container">
+            <h2>Questions and Replies</h2>
+            <form id="qna-list">
+                <input type="text" id="url" placeholder="Event URL" required>
+                <button type="submit">Submit</button>
+            </form>
+            <ul id="questions-list">
+                <!-- Questions will be populated here from script.js -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
